@@ -1,0 +1,129 @@
+{
+  "agent": {
+    "name": "Business Chart Improvement Agent",
+    "specialty": "evidence-preserving business visualization improvement",
+    "version": "0.1-student"
+  },
+  "business_question": "What evidence can you find whether or not the "women and children first" principle applied during that time period on the Titanic?",
+  "business_answer_shown": "The survival outcomes provide descriptive evidence consistent with a "women and children first" pattern: adult women had a 76.8% survival rate and children had a 57.4% survival rate, compared with 17.7% for adult men. The differences are substantial, although the data alone do not establish why individual passengers were prioritized.",
+  "baseline_chart_assessment": [
+    {
+      "issue": "The baseline title identifies the topic but does not state the principal evidence-based takeaway.",
+      "why_it_matters": "Business managers must interpret the bars before understanding the answer to the supplied question. The governing framework emphasizes that the title should convey the point being made.",
+      "related_principle": "Story / Method - Visual Story and Tell the Story with the Title",
+      "priority": "high"
+    },
+    {
+      "issue": "The most decision-relevant comparison—women and children versus adult men—is not explicitly highlighted.",
+      "why_it_matters": "The viewer can calculate the differences visually, but the chart makes the audience perform unnecessary interpretation work instead of directing attention to the evidence most relevant to the business question.",
+      "related_principle": "Perception - Use the Eye-Brain System of Seeing",
+      "priority": "high"
+    },
+    {
+      "issue": "The vertical bars require more eye movement between category labels, bar heights, and values than necessary.",
+      "why_it_matters": "A horizontal comparison provides more room for direct labels and allows the three rates and their sample sizes to be read together more efficiently.",
+      "related_principle": "Charts / Signs - Right Chart and Visualization as a Communication System",
+      "priority": "medium"
+    },
+    {
+      "issue": "The baseline includes prominent gridlines and a large amount of unused plotting area.",
+      "why_it_matters": "These elements do not add substantive evidence and slightly reduce the signal-to-noise ratio.",
+      "related_principle": "Method - Remove All Chart Junk",
+      "priority": "low"
+    }
+  ],
+  "data_fidelity_checks": [
+    {
+      "check": "Adult women survival rate and denominator",
+      "result": "pass",
+      "notes": "Source data verification produced 255 survivors among 332 adult women with known age, equal to 76.8%."
+    },
+    {
+      "check": "Children survival rate and denominator",
+      "result": "pass",
+      "notes": "Using the supplied definition of children as passengers under age 16 and excluding missing ages produced 66 survivors among 115 children, equal to 57.4%."
+    },
+    {
+      "check": "Adult men survival rate and denominator",
+      "result": "pass",
+      "notes": "Source data verification produced 106 survivors among 599 adult men with known age, equal to 17.7%."
+    },
+    {
+      "check": "Category definitions and missing-age treatment",
+      "result": "pass",
+      "notes": "The improved chart preserves the baseline definition of children as passengers under age 16 and excludes passengers whose age is missing."
+    },
+    {
+      "check": "Relative survival-rate relationships",
+      "result": "pass",
+      "notes": "The source confirms the ordering adult women (76.8%) > children (57.4%) > adult men (17.7%). Adult women exceeded adult men by 59.1 percentage points and children exceeded adult men by 39.7 percentage points."
+    }
+  ],
+  "principles_applied": [
+    {
+      "principle": "Story - Create a Visual Story",
+      "change_made": "Replaced the topic-style title with the takeaway title "Women and children survived far more often than adult men" and added a concise subtitle connecting the pattern to the supplied question.",
+      "expected_communication_benefit": "The audience can understand the principal evidence before examining individual values."
+    },
+    {
+      "principle": "Purpose - Answer a Well-Framed Analytical Question",
+      "change_made": "Kept the three comparison groups directly tied to evaluating whether women and children experienced higher survival than adult men.",
+      "expected_communication_benefit": "The visualization remains focused on the supplied business question rather than introducing unrelated Titanic characteristics."
+    },
+    {
+      "principle": "Perception - Use the Eye-Brain System of Seeing",
+      "change_made": "Added direct percentage-point comparisons between adult men and the two higher-survival groups.",
+      "expected_communication_benefit": "The magnitude of the evidence is visible immediately rather than requiring the audience to calculate differences mentally."
+    },
+    {
+      "principle": "Method - Remove All Chart Junk",
+      "change_made": "Reduced visual clutter, removed unnecessary chart borders, subdued gridlines, and retained only elements needed to interpret the comparison.",
+      "expected_communication_benefit": "The survival-rate differences receive greater visual attention and the signal-to-noise ratio improves."
+    },
+    {
+      "principle": "Charts - Select the Chart Type Effectively",
+      "change_made": "Changed the vertical bars to horizontal bars while preserving the same quantitative comparison and zero-based percentage scale.",
+      "expected_communication_benefit": "Direct labels and sample sizes fit naturally beside each bar, improving scanability without changing the evidence."
+    }
+  ],
+  "improved_chart": {
+    "artifact_created": true,
+    "filename": "improved_chart.png",
+    "chart_type": "Horizontal bar chart",
+    "title": "Women and children survived far more often than adult men",
+    "accessibility_notes": "The chart uses direct category and numeric labels, does not require a separate legend, retains a zero-based percentage scale, and communicates the key comparison through position, text, and annotations rather than relying on color alone. Artifact: sandbox:/mnt/data/improved_chart.png"
+  },
+  "baseline_to_improved_comparison": [
+    {
+      "dimension": "Story",
+      "baseline": "Title describes Titanic survival rates and references the principle but leaves the audience to derive the answer.",
+      "improved": "Title immediately states the observed survival pattern and the subtitle connects that evidence to the supplied question."
+    },
+    {
+      "dimension": "Perception",
+      "baseline": "All three bars receive similar visual treatment and the important gaps must be inferred.",
+      "improved": "Direct percentage-point annotations make the adult-men comparison explicit."
+    },
+    {
+      "dimension": "Method",
+      "baseline": "Prominent gridlines and a large plotting area add some unnecessary visual weight.",
+      "improved": "Reduced chart furniture and direct labels increase the signal-to-noise ratio."
+    },
+    {
+      "dimension": "Charts",
+      "baseline": "Vertical bars accurately show the three survival rates.",
+      "improved": "Horizontal bars preserve the accurate comparison while creating more room for readable direct labels and sample sizes."
+    },
+    {
+      "dimension": "Data fidelity",
+      "baseline": "Values shown are 76.8% for adult women, 57.4% for children, and 17.7% for adult men.",
+      "improved": "The same source-verified rates and denominators are preserved: 76.8% (n=332), 57.4% (n=115), and 17.7% (n=599)."
+    }
+  ],
+  "remaining_limitations": [
+    "The chart shows descriptive survival outcomes; it does not by itself prove that a formal evacuation rule caused the differences.",
+    "Passengers with missing age are excluded because the child/adult classification cannot be established from the supplied age field.",
+    "The aggregate comparison does not control for passenger class, location aboard the ship, lifeboat access, or other factors that may also be associated with survival."
+  ],
+  "abstention_or_more_information_needed": []
+}
