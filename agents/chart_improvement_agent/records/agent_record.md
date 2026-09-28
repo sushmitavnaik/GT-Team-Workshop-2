@@ -1,6 +1,6 @@
 # Chart Improvement Specialist Agent Record
 
-- Repository / branch / commit: GT-Team-Workshop-2 / practice-exercise / pending tested-agent commit
+- Repository / branch / commit: GT-Team-Workshop-2 / practice-exercise / 119290a
 - Agent name and version: Business Chart Improvement Agent / 0.1-student
 - Exact business question: What evidence can you find whether or not the "women and children first" principle applied during that time period on the Titanic?
 - Baseline chart filename: baseline_chart.png
