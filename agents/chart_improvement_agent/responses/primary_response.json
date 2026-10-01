@@ -4,8 +4,8 @@
     "specialty": "evidence-preserving business visualization improvement",
     "version": "0.1-student"
   },
-  "business_question": "What evidence can you find whether or not the "women and children first" principle applied during that time period on the Titanic?",
-  "business_answer_shown": "The survival outcomes provide evidence consistent with a "women and children first" pattern: adult women had a 76.8% survival rate and children had a 57.4% survival rate, compared with 17.7% for adult men. Adult women's survival rate was 59.1 percentage points higher than adult men's, and children's was 39.7 percentage points higher.",
+  "business_question": "What evidence can you find whether or not the \"women and children first\" principle applied during that time period on the Titanic?",
+  "business_answer_shown": "The survival outcomes provide evidence consistent with a \"women and children first\" pattern: adult women had a 76.8% survival rate and children had a 57.4% survival rate, compared with 17.7% for adult men. Adult women's survival rate was 59.1 percentage points higher than adult men's, and children's was 39.7 percentage points higher.",
   "baseline_chart_assessment": [
     {
       "issue": "The baseline title identifies the topic but does not state the principal evidence-based takeaway.",
@@ -62,12 +62,12 @@
   "principles_applied": [
     {
       "principle": "Story — Create a Visual Story",
-      "change_made": "Replaced the descriptive baseline title with the takeaway title "Women and children survived far more often than adult men."",
+      "change_made": "Replaced the descriptive baseline title with the takeaway title \"Women and children survived far more often than adult men.\"",
       "expected_communication_benefit": "The principal answer is understandable before the viewer examines individual values."
     },
     {
       "principle": "Purpose — Answer Well-Framed Analytical Questions",
-      "change_made": "Added a concise statement that the observed outcomes are evidence consistent with a "women and children first" pattern.",
+      "change_made": "Added a concise statement that the observed outcomes are evidence consistent with a \"women and children first\" pattern.",
       "expected_communication_benefit": "Connects the chart directly to the supplied business question without claiming that the observational data prove why individual passengers survived."
     },
     {
@@ -126,7 +126,7 @@
     }
   ],
   "remaining_limitations": [
-    "The chart shows an association in survival outcomes and does not by itself establish that the "women and children first" principle caused those outcomes.",
+    "The chart shows an association in survival outcomes and does not by itself establish that the \"women and children first\" principle caused those outcomes.",
     "Passengers with missing age are excluded because age is required to distinguish children from adults.",
     "The visualization aggregates passengers across travel classes and other characteristics, so it does not show whether the observed pattern differed by passenger class or other factors."
   ],
